@@ -1,0 +1,17 @@
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start; /* Para alinear el app-info en la parte superior */
+  background-color: lightblue; /* Fondo celeste */
+  padding: 20px; /* Añadir un poco de espacio alrededor del contenido */
+}
+
+.form-container {
+  width: 50%; /* Ajusta este valor según sea necesario */
+  margin-top: 20px;
+}
+
+.info-container {
+  width: 40%; /* Ajusta este valor según sea necesario */
+  margin-top: 20px;
+}

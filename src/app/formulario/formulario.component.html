@@ -1,0 +1,31 @@
+<app-toolbar></app-toolbar>
+<div class="container">
+  <div class="form-container">
+    <h1>Ingreso de Mascotas</h1>
+    <mat-label>Nombre Mascota:</mat-label>
+    <p> </p>
+    <mat-form-field class="input">
+      <input [(ngModel)]="nombre" id="inputNombre" matInput placeholder="Nombre de mascota" required>
+                @if(nombre === '') {
+                    <mat-error>Ingresa una mascota.</mat-error>
+                }
+    </mat-form-field>
+
+    <p> </p>
+
+    <p> </p>
+    <mat-radio-group [(ngModel)]="type" aria-label="Elija una raza">
+
+      <span>Raza de Mascota:</span>
+      <p> </p>
+      <mat-radio-button value="1">PERRO</mat-radio-button>
+      <mat-radio-button value="2">GATO</mat-radio-button>
+      <mat-radio-button value="3">HAMSTER</mat-radio-button>
+      <p> </p>
+    </mat-radio-group>
+
+    <p> </p>
+    <button type="submit" mat-raised-button (click)="openDialog()">Guardar</button>
+
+
+</div>
